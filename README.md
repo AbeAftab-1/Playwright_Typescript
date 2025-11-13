@@ -1,4 +1,4 @@
-# Enterprise Test Automation using Playwright (JavaScript)
+# Enterprise Test Automation using Playwright (Typescript)
 This public Git repository (https://github.com/AbeAftab-1/Enterprise_Playwright) is for sample enterprise test automation structure using playwright. This repository include automation for https://www.saucedemo.com/ using Playwright (Typescript) code using fixtures, pages, encrypted user id and passwords, logging and using JSON/CSV files for data. 
 
 The following steps provides details to install tools and extensions to use the code in this repository.
