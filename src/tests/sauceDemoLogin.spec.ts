@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import LoginPage from '../pages/sauceLoginPage';
 
-import { decrypt } from "../utils/CryptojsUtil";
+import { decrypt } from "../utils/cryptojsUtil.ts";
 
 test('test', async ({ page }) => {
     // Declare loginPage
