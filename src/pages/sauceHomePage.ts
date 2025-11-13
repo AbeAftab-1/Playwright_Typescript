@@ -1,5 +1,5 @@
 import { Page, expect } from "@playwright/test";
-import logger from "../utils/LoggerUtil";
+import logger from "../utils/loggerUtil.ts";
 
 
 export default class HomePage {
