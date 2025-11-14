@@ -2,7 +2,7 @@
 import { test, expect } from '../fixtures/sauceLoginFixture';
 
 
-test('Test Login using Fixture', async ({ sauceHomePage }) => {
+test('Test Login using Login Fixture', async ({ sauceHomePage }) => {
 
     // Verify Home Page Heading
     await sauceHomePage.expectHomepageHeadingToBeVisible();
