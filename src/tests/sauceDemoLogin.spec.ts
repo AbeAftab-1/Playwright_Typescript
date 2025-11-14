@@ -25,7 +25,7 @@ test('test', async ({ page }) => {
         const makeAxeBuilder = () => new AxeBuilder({ page })
             .withTags(['wcag21a', 'wcag21aa', 'wcag21aaa'])
             .analyze();
-        const accessibilityScanResults = await makeAxeBuilder(page);
+        const accessibilityScanResults = await makeAxeBuilder();
         // Assertion
         expect(accessibilityScanResults.violations).toEqual([]);
     })
