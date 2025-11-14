@@ -1,0 +1,15 @@
+// importing combined login fixture
+import { test, expect } from '../fixtures/sauceLoginFixture';
+
+
+test('test', async ({ sauceHomePage }) => {
+
+    // Verify Home Page Heading
+    await sauceHomePage.expectHomepageHeadingToBeVisible();
+
+    // Open Menu option
+    await sauceHomePage.navigateToMenu();
+    // Click Logout option
+    await sauceHomePage.clickLogoutButton();
+
+});
