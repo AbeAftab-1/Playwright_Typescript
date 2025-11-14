@@ -11,9 +11,11 @@
     "@faker-js/faker": "^10.1.0",
     "@playwright/test": "^1.56.1",
     "@types/crypto-js": "^4.2.2",
-    "@types/node": "^24.10.1"
+    "@types/node": "^24.10.1",
+    "axe-core": "^4.11.0"
   },
   "dependencies": {
+    "@axe-core/playwright": "^4.11.0",
     "crypto-js": "^4.2.0",
     "csv-writer": "^1.6.0",
     "csvtojson": "^2.0.14",
