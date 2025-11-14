@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { encryptEnvFile, decryptEnvFile } from '../utils/encryptEnvFile';
+import { encryptEnvFile, decryptEnvFile } from '../utils/encryptEnvFile.ts';
 
 // remove .skip to encrypt file
 test.skip('Encrypt config/.env file', async ({page}) => {
