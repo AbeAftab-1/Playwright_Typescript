@@ -6,6 +6,7 @@ export default class HomePage {
     private readonly homepageHeadingLocator = 'Swag Labs';
     private readonly openMenuButtonLocator = 'Open Menu';
     private readonly logoutLinkLocator = '[data-test="logout-sidebar-link"]';
+    private readonly productSortLocator = '[data-test="product-sort-container"]';
 
     // Declare contructor
     constructor(private page: Page) { }
@@ -30,5 +31,11 @@ export default class HomePage {
     async clickLogoutButton() {
         await this.page.locator(this.logoutLinkLocator).click();
         logger.info('User is logged out');
+    }
+
+    // Method to sort products in Homepage
+    async sortProduct(sortkey: string) {
+        await this.page.locator(this.productSortLocator).selectOption(sortkey);        
+        logger.info(`Sorted products in Homepage with key: ` + sortkey);
     }
 }

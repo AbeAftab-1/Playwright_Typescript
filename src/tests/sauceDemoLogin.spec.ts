@@ -5,7 +5,7 @@ import { decrypt } from "../utils/cryptojsUtil.ts";
 // Axe-Code Playwright for Accessiblity checks
 const AxeBuilder = require('@axe-core/playwright').default;
 
-test('test', async ({ page }) => {
+test('Test Login and Accessiblity Test', async ({ page }) => {
     // Declare loginPage
     const loginPage = new LoginPage(page);
 
