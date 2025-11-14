@@ -1,6 +1,6 @@
 import { test as base, expect as defaultExpect } from "@playwright/test";
 import SauceLoginPage from '../pages/sauceLoginPage.ts';
-import { decrypt } from "../utils/CryptojsUtil";
+import { decrypt } from "../utils/cryptojsUtil.ts";
 import HomePage from "../pages/sauceHomePage.ts";
 
 export const expect = defaultExpect;
